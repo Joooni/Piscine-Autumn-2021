@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -Werror ft_div_mod.c test-ex03.c && ./a.out

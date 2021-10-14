@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -Werror ft_swap.c test-ex02.c && ./a.out

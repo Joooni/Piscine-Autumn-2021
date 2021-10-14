@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -Werror ft_putstr.c test-ex05.c && ./a.out

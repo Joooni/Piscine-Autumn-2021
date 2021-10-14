@@ -1,0 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   skyscraper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/09 16:50:26 by jsubel            #+#    #+#             */
+/*   Updated: 2021/10/09 16:50:27 by jsubel           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+int	count_visible_skyscrapers(int *line)
+{
+	int	counter;
+	int	result;
+	int	max_seen;
+
+	counter = 0;
+	result = 0;
+	max_seen = line[0];
+	while (counter < 4)
+	{
+		if (line[0] <= line[counter] && line[counter] >= max_seen)
+		{
+			result++;
+			max_seen = line[counter];
+		}
+		counter++;
+	}
+	return (result);
+}
+/* 
+	char *row1[4];
+	char *row2[4];
+	char *row3[4];
+	char *row4[4];
+	char *grid_ptr[4] = {0};
+	
+	
+	grid_ptr[0] = &*row1[0];
+	grid_ptr[1] = &*row2[0];
+	grid_ptr[2] = &*row3[0];
+	grid_ptr[3] = &*row4[0];
+ */

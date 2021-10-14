@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -Werror ft_strlen.c test-ex06.c && ./a.out
